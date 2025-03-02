@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import Ava from "@src/assets/img/ava.jpg";
+import Prose from "../components/Prose.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+	title="About Me"
+	description="Lorem ipsum dolor sit amet"
+>
+  <div class='container'>
+		<main class='prose text-lg dark:prose-invert'>
+      <article>
+        <div class='w-full md:flex md:items-center gap-16 mb-10'>
+          <div class="text-pretty leading-9">
+            <h1 class="text-4xl font-bold mb-4">Hi There 👋, Vinh Here! </h1>
+            <Prose>
+              <div class="text-lg">
+                <p>I am a Front-end Engineer. I love sharing about my journey and experience in Software Engineering, Front-end Development and new technologies. .</p>
+                <p>I set up your own blog and portfolio website with Astro and Tailwind CSS.</p>  
+              </div>
+            </Prose>
+          </div>
+        </div>     
+        <div>
+          
+        </div>
+        </article>
+      </article>
+    </main>
+  </div>
+</BaseLayout>
